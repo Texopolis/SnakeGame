@@ -10,7 +10,7 @@ const width=16
 let appleIndex=0
 let score=0
 let intervalTime=500
-let speed = .65
+let speed = .66
 let timerID=0
 
 

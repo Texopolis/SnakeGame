@@ -96,5 +96,5 @@ body{
     50%{border:solid 5px red;
     background-color:black}
     75%{border:solid 2px yellow}
-    100%{border:solid 1px red}
+    100%{border:solid 1px rgb(241, 7, 7)}
 }
