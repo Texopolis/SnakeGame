@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+    text-align: center;
+}
+
+button {
+    padding: 7px 15px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10px;
+    background-color: rgba(157, 235, 133, 0.5);
+    margin-top: 15px;
+}
+
+h1,
+h2{
+    font-family: 'Monoton', cursive;
+}
+
+body{
+    background-color: antiquewhite;
+    display:flex;
+    flex-direction: column;
+}
+
+.wrapper{
+    display: inline-block;
+    padding: 1em;
+    margin: auto;
+}
+
+.grid{
+    width: 160px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid black 1px;
+
+}
+
+.red{
+    padding:1px;
+    border: solid rgb(153, 94, 94) 1px;
+
+}
+
+.green{
+    padding:2px;
+    border: solid rgb(78, 119, 73) 2px;
+
+}
+
+.yellow{
+    padding:4px;
+    border: solid rgb(199, 199, 106) 4px;
+    margin:auto;
+
+}
+
+.square{
+    width:10px;
+    height:10px;
+    box-sizing: border-box;
+    /*border: solid lightgreen 1px;
+
+    border-bottom: 7.5px solid #555;
+    border-left: 2.5px solid transparent;
+    border-right: 2.5px solid transparent;
+    height: 0;
+    width: 9.5px;*/
+    border-radius: 30%;
+    /*border: solid lightgreen 1px;*/
+
+}
+
+.snake {
+    background-color: rgb(43, 5, 5);
+}
+
+.apple{
+    background-color: red;
+    
+}
+
+.crash{
+    animation: flash;
+    animation-duration: .5s;
+    animation-iteration-count: 4;
+}
+
+@keyframes flash {
+    0%{border:solid 1px red;
+    background-color:black}
+    25%{border:solid 2px yellow}
+    50%{border:solid 5px red;
+    background-color:black}
+    75%{border:solid 2px yellow}
+    100%{border:solid 1px rgb(241, 7, 7)}
+}
